@@ -1,4 +1,4 @@
-# Conceitos Básicos de Desenvolvimento
+# Conceitos Básicos de Desenvolvimentos
 ![Gdevelop](images/image16.png)
 ## Criando um Novo Projeto
 
