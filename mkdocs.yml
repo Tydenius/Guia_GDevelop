@@ -1,0 +1,78 @@
+
+site_name: 'Tech Week - Game Development Day'
+
+theme:
+  features:
+    - instant
+    - navigation.expand
+    - tabs: true
+  name: 'material'
+  palette: 
+    
+    # Palette toggle for light mode
+    - scheme: default
+      primary: 'grey'
+      accent: 'light blue'
+      toggle:
+        icon: material/weather-night 
+        name: Switch to dark mode
+
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      primary: 'grey'
+      accent: 'teal'
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+# Copyright
+copyright: 'Copyright &copy; 2019 / Prof. Rafael Corsi / rafael.corsi@insper.edu.br'
+
+# repo
+docs_dir: docs-src
+site_dir: docs
+
+nav:
+  - Guia de Desenvolvimento com o GDevelop: index.md
+
+# Extensions
+markdown_extensions:
+  - markdown.extensions.attr_list
+  - markdown.extensions.admonition
+  - markdown.extensions.codehilite:
+      guess_lang: false
+  - markdown.extensions.def_list
+  - markdown.extensions.footnotes
+  - markdown.extensions.meta
+  - markdown.extensions.toc:
+      permalink: true
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+plugins:
+    - search
