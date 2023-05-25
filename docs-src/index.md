@@ -136,14 +136,14 @@ Quando criamos uma variável para o projeto, o que chamamos de **Variável Globa
 ![Variáveis](images/image4.png)
 
 * Ao criar uma variável, temos que definir alguns parâmetros da mesma:
-    * Nome: Um nome que irá identificar esta variável. Quando trabalhos com variáveis de objetos, estes podem possuir variáveis com nomes iguais entre eles. Por exemplo, um objeto Personagem e um objeto Inimigo podem possuir uma variável Vida com valores diferentes.
-    * Tipo: Uma variável precisa ter um tipo definido, o que irá ditar o que ela poderá armazenar dentro dela. São estes tipos:
-        * String: Capaz de armazenar textos;
-        * Number: Capaz de armazenar valores numéricos;
-        * Boolean: Armazena um valor de True ou False para lógicas booleanas;
-        * Array: Armazena um conjunto de valores dentro dele, separados pela sua posição dentro da lista numericamente.
-        * Structure: Armazena um conjunto de variáveis dentro dele.
-    * Valor Inicial: Define um valor inicial para esta variável.
+    * **Nome:** Um nome que irá identificar esta variável. Quando trabalhos com variáveis de objetos, estes podem possuir variáveis com nomes iguais entre eles. Por exemplo, um objeto Personagem e um objeto Inimigo podem possuir uma variável Vida com valores diferentes.
+    * **Tipo:** Uma variável precisa ter um tipo definido, o que irá ditar o que ela poderá armazenar dentro dela. São estes tipos:
+        * **String:** Capaz de armazenar textos;
+        * **Number:** Capaz de armazenar valores numéricos;
+        * **Boolean:** Armazena um valor de True ou False para lógicas booleanas;
+        * **Array:** Armazena um conjunto de valores dentro dele, separados pela sua posição dentro da lista numericamente.
+        * **Structure:** Armazena um conjunto de variáveis dentro dele.
+    * **Valor Inicial:** Define um valor inicial para esta variável.
 
 * Para criar uma variável global, temos que ir nas propriedades do Projeto, clicando no botão no canto superior esquerdo do projeto e, em seguida, clicar no botão ***Global Variables (2)***  que está dentro da aba ***Game Settings (1)***. as definições de uma variável global são os mesmo para uma variável de um objeto.
 
