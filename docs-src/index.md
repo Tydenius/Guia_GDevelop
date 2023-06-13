@@ -19,7 +19,7 @@
 
     * **3 - Teste e Publicação do Projeto:** O Botão ***Preview*** permite que executemos nosso projeto sem necessidade de publicá-lo ou construir um executável para o mesmo. Já o Botão ***Publish*** é onde iremos preparar todos os arquivos do projeto para publicá-lo e permitir que outras pessoas possam jogá-lo
 
-    * **4 - Menu de Edição da Tela:** Estes botões são responsáveis por abrir diversas telas que utilizamos no GDevelop, como a Tela de Propriedades (5), ou a tela de Objetos (7). Além disso, possui botões para desfazer e refazer alterações no projeto, configurar a tela de fundo, adicionar uma grade, Zoom, etc.
+    * **4 - Menu de Edição da Tela:** Estes botões são responsáveis por abrir diversas telas que utilizamos no GDevelop, como a Tela de Propriedades **(5)**, ou a tela de Objetos **(7)**. Além disso, possui botões para desfazer e refazer alterações no projeto, configurar a tela de fundo, adicionar uma grade, Zoom, etc.
 
     * **5 - Tela de Propriedades:** Esta tela apresenta todas as propriedades de uma instância de um objeto selecionado da cena, como posição, tamanho, entre outros, Podemos editar todas essas informações a partir desta tela.
 
