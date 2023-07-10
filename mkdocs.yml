@@ -32,7 +32,7 @@ theme:
     code: Roboto Mono
 
 # Copyright
-copyright: 'Copyright &copy; 2019 / Prof. Rafael Corsi / rafael.corsi@insper.edu.br'
+copyright: 'Copyright &copy; 2023 / Victor Tavais Cordeiro / victortc@insper.edu.br'
 
 # repo
 docs_dir: docs-src
