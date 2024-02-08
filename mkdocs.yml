@@ -2,7 +2,8 @@
 site_name: 'Tech Week - Game Development Day'
 
 theme:
-  favicon: img/favicon.ico
+  logo: images/favicon.ico
+  favicon: images/favicon.ico
   features:
     - instant
     - navigation.expand
