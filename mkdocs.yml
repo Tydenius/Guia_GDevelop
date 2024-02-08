@@ -2,6 +2,7 @@
 site_name: 'Tech Week - Game Development Day'
 
 theme:
+  favicon: docs/img/favicon.ico
   features:
     - instant
     - navigation.expand
