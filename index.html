@@ -1,0 +1,811 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="img/favicon.ico">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.8">
+    
+    
+      
+        <title>Tech Week - Game Development Day</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.f2e4d321.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="grey" data-md-color-accent="light-blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#conceitos-basicos-de-desenvolvimentos" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="Tech Week - Game Development Day" class="md-header__button md-logo" aria-label="Tech Week - Game Development Day" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.955 11.956a.84.84 0 0 0-.837-.796H17.37V1.9c0-.019 0-.037-.002-.055a.84.84 0 0 0-.494-.806A11.89 11.89 0 0 0 12 0a11.89 11.89 0 0 0-8.454 3.515A11.983 11.983 0 0 0 .043 12c0 1.62.316 3.192.94 4.672a11.928 11.928 0 0 0 2.563 3.813 11.96 11.96 0 0 0 3.799 2.572C8.82 23.683 10.386 24 12 24c1.614 0 3.18-.317 4.655-.943a11.905 11.905 0 0 0 3.799-2.572A11.983 11.983 0 0 0 23.957 12c0-.014 0-.03-.002-.044Zm-4.685 7.343a10.24 10.24 0 0 1-7.272 3.022 10.228 10.228 0 0 1-7.273-3.022A10.305 10.305 0 0 1 1.714 12a10.312 10.312 0 0 1 6.281-9.511 10.212 10.212 0 0 1 4.003-.809 10.197 10.197 0 0 1 3.694.688v8.792h-3.765a.84.84 0 0 0 0 1.68h3.729a3.78 3.78 0 0 1-1.205 2.012 3.75 3.75 0 0 1-2.458.92A3.77 3.77 0 0 1 8.235 12a3.768 3.768 0 0 1 3.758-3.772.84.84 0 0 0 0-1.68 5.385 5.385 0 0 0-3.841 1.597A5.429 5.429 0 0 0 6.559 12c0 1.457.564 2.825 1.591 3.855a5.384 5.384 0 0 0 3.841 1.597 5.431 5.431 0 0 0 3.555-1.329 5.46 5.46 0 0 0 1.813-3.281h4.89a10.292 10.292 0 0 1-2.979 6.457Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Tech Week - Game Development Day
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Guia de Desenvolvimento com o GDevelop
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="grey" data-md-color-accent="light-blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="grey" data-md-color-accent="teal"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="Tech Week - Game Development Day" class="md-nav__button md-logo" aria-label="Tech Week - Game Development Day" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.955 11.956a.84.84 0 0 0-.837-.796H17.37V1.9c0-.019 0-.037-.002-.055a.84.84 0 0 0-.494-.806A11.89 11.89 0 0 0 12 0a11.89 11.89 0 0 0-8.454 3.515A11.983 11.983 0 0 0 .043 12c0 1.62.316 3.192.94 4.672a11.928 11.928 0 0 0 2.563 3.813 11.96 11.96 0 0 0 3.799 2.572C8.82 23.683 10.386 24 12 24c1.614 0 3.18-.317 4.655-.943a11.905 11.905 0 0 0 3.799-2.572A11.983 11.983 0 0 0 23.957 12c0-.014 0-.03-.002-.044Zm-4.685 7.343a10.24 10.24 0 0 1-7.272 3.022 10.228 10.228 0 0 1-7.273-3.022A10.305 10.305 0 0 1 1.714 12a10.312 10.312 0 0 1 6.281-9.511 10.212 10.212 0 0 1 4.003-.809 10.197 10.197 0 0 1 3.694.688v8.792h-3.765a.84.84 0 0 0 0 1.68h3.729a3.78 3.78 0 0 1-1.205 2.012 3.75 3.75 0 0 1-2.458.92A3.77 3.77 0 0 1 8.235 12a3.768 3.768 0 0 1 3.758-3.772.84.84 0 0 0 0-1.68 5.385 5.385 0 0 0-3.841 1.597A5.429 5.429 0 0 0 6.559 12c0 1.457.564 2.825 1.591 3.855a5.384 5.384 0 0 0 3.841 1.597 5.431 5.431 0 0 0 3.555-1.329 5.46 5.46 0 0 0 1.813-3.281h4.89a10.292 10.292 0 0 1-2.979 6.457Z"/></svg>
+
+    </a>
+    Tech Week - Game Development Day
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Guia de Desenvolvimento com o GDevelop
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Guia de Desenvolvimento com o GDevelop
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#criando-um-novo-projeto" class="md-nav__link">
+    <span class="md-ellipsis">
+      Criando um Novo Projeto
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entendendo-a-hud-do-gdevelop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Entendendo a HUD do GDevelop
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#criando-o-primeiro-objeto" class="md-nav__link">
+    <span class="md-ellipsis">
+      Criando o Primeiro Objeto
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mascaras-de-colisao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Máscaras de Colisão
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pontos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pontos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comportamentos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comportamentos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variaveis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Variáveis
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adicionando-objetos-na-cena" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adicionando Objetos na Cena
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#camadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Camadas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#eventos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Eventos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusão
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#criando-um-novo-projeto" class="md-nav__link">
+    <span class="md-ellipsis">
+      Criando um Novo Projeto
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#entendendo-a-hud-do-gdevelop" class="md-nav__link">
+    <span class="md-ellipsis">
+      Entendendo a HUD do GDevelop
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#criando-o-primeiro-objeto" class="md-nav__link">
+    <span class="md-ellipsis">
+      Criando o Primeiro Objeto
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mascaras-de-colisao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Máscaras de Colisão
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pontos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pontos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comportamentos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comportamentos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variaveis" class="md-nav__link">
+    <span class="md-ellipsis">
+      Variáveis
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adicionando-objetos-na-cena" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adicionando Objetos na Cena
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#camadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Camadas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#eventos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Eventos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusão
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="conceitos-basicos-de-desenvolvimentos">Conceitos Básicos de Desenvolvimentos<a class="headerlink" href="#conceitos-basicos-de-desenvolvimentos" title="Permanent link">&para;</a></h1>
+<p><img alt="Gdevelop" src="images/image16.png" /></p>
+<h2 id="criando-um-novo-projeto">Criando um Novo Projeto<a class="headerlink" href="#criando-um-novo-projeto" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>Após abrir o GDevelop, iremos começar um novo projeto em branco clicando no botão <strong>Create Blank Project</strong> na página inicial:
+<img alt="Criar Projeto em Branco" src="images/image10.png" /></p>
+</li>
+<li>
+<p>Na tela de Novo Projeto, devemos dar um nome para o mesmo <strong>(1)</strong>, e selecionar o diretório onde ele ficará salvo <strong>(2)</strong>. Após isso, clique no botão <strong>Create Project (3)</strong>, então GDevelop irá preparar o ambiente de desenvolvimento.
+<img alt="Novo Projeto" src="images/image8.png" /></p>
+</li>
+</ul>
+<h2 id="entendendo-a-hud-do-gdevelop">Entendendo a HUD do GDevelop<a class="headerlink" href="#entendendo-a-hud-do-gdevelop" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>Após o término da criação do projeto, teremos uma tela inicial similar a abaixo. Segue uma breve descrição de cada área.</p>
+<p><img alt="HUD do GDevelop" src="images/image2.png" /></p>
+<ul>
+<li>
+<p><strong>1 - Menu de Propriedades do Projeto:</strong> Aqui configuramos diversas propriedades do projeto, como cenas, tamanho da Tela, Variáveis Globais, definições de publicação, etc.</p>
+</li>
+<li>
+<p><strong>2 - Abas do Projeto:</strong> Nesta área nós somos capazes de trocar entre os cenários do nosso projeto, assim como dos Eventos. Cada cena criada possui uma aba de Eventos atrelada nela como padrão.</p>
+</li>
+<li>
+<p><strong>3 - Teste e Publicação do Projeto:</strong> O Botão <strong><em>Preview</em></strong> permite que executemos nosso projeto sem necessidade de publicá-lo ou construir um executável para o mesmo. Já o Botão <strong><em>Publish</em></strong> é onde iremos preparar todos os arquivos do projeto para publicá-lo e permitir que outras pessoas possam jogá-lo</p>
+</li>
+<li>
+<p><strong>4 - Menu de Edição da Tela:</strong> Estes botões são responsáveis por abrir diversas telas que utilizamos no GDevelop, como a Tela de Propriedades <strong>(5)</strong>, ou a tela de Objetos <strong>(7)</strong>. Além disso, possui botões para desfazer e refazer alterações no projeto, configurar a tela de fundo, adicionar uma grade, Zoom, etc.</p>
+</li>
+<li>
+<p><strong>5 - Tela de Propriedades:</strong> Esta tela apresenta todas as propriedades de uma instância de um objeto selecionado da cena, como posição, tamanho, entre outros, Podemos editar todas essas informações a partir desta tela.</p>
+</li>
+<li>
+<p><strong>6 - Cena:</strong> Aqui temos a nossa área de criação, ou a Cena propriamente dita. É nesta região em que nós efetivamente construímos o mundo, adicionando instâncias de objetos e organizando-os como queremos. Alterações feitas na Tela de Propriedades são também refletidas aqui.</p>
+</li>
+<li>
+<p><strong>7 - Tela de Objetos:</strong> Aqui nós temos uma lista de todos os objetos que criamos em nosso projeto, podendo selecioná-los para adicionar uma nova instância dele na cena, ou alterar suas propriedades, como imagem, variáveis e comportamentos.</p>
+</li>
+<li>
+<p><strong>8 - Tela de Camadas:</strong> Esta tela mostra as diversas camadas do nosso Projeto. Camadas são importantes para organizar as Instâncias de Objetos do nosso projeto.</p>
+</li>
+</ul>
+<p>Nós iremos nos aprofundar em cada uma destas seções do GDevelop com o avançar deste tutorial, mas agora que temos uma ideia básica de cada uma delas, podemos começar a navegar pela Engine para criarmos nosso projeto efetivamente.</p>
+</li>
+</ul>
+<h2 id="criando-o-primeiro-objeto">Criando o Primeiro Objeto<a class="headerlink" href="#criando-o-primeiro-objeto" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Para efetivamente criarmos nosso jogo, precisamos trabalhar com <strong><em>Objetos</em></strong>. As propriedades de um Objeto são definidas pelo seu <strong><em>Tipo</em></strong>. O tipo mais comum de objeto utilizado em um projeto no GDevelop é o <strong><em>Sprite</em></strong>, e este será o que utilizaremos primeiro.</li>
+</ul>
+<p><img alt="Objeto Sprite" src="images/image20.png" /></p>
+<ul>
+<li>
+<p>Após clicar na Opção Sprite, surgirá a Tela de Propriedade do Sprite. Nela nós podemos definir todos os dados principais do objeto, como seu nome, animações, suas variáveis e comportamentos.</p>
+<p>Antes de definirmos as propriedades mais avançadas do nosso sprite, precisamos definir seu nome e sua imagem. Em <strong><em>Object Name</em></strong>, digite o nome desejado para seu Sprite, lembrando que este nome deve ser algo que caracterize este objeto, como por exemplo “Herói” ou um nome próprio. Após isso, nós devemos clicar no botão <strong><em>Add an Animation</em></strong> para colocar uma imagem no Sprite.</p>
+</li>
+</ul>
+<p><img alt="Tela do Sprite" src="images/image14.png" /></p>
+<ul>
+<li>
+<p>Ao clicar em Add Animation, teremos na tela nossa <strong><em>Animation #0 (1)</em></strong>, que será a primeira instância de imagem do nosso Objeto.
+    Um Sprite trabalha com animações, que são formadas por uma sequência de imagens que geram um determinado movimento de uma ação. Exemplos de animações mais comuns que um Sprite possui são a de estado <strong>parado(Idle)</strong>, e <strong>em movimento(Walk/Run)</strong>, mas para cada ação que nosso Sprite pode realizar, podemos ter uma animação que irá ser utilizada em conjunto para representar o movimento do Sprite realizando esta ação.</p>
+</li>
+<li>
+<p>Caso você queira adicionar mais animações no seu Sprite, basta clicar em <strong><em>+ Add an Animation (2)</em></strong>, e uma nova linha de Animação irá aparecer.</p>
+</li>
+</ul>
+<p><img alt="Nova Animação" src="images/image13.png" /></p>
+<ul>
+<li>
+<p>Para adicionar uma ou mais imagens em uma animação, você pode clicar em <strong><em>+ Add</em></strong> e selecionar as imagens que deseja utilizar de um diretório.
+Alternativamente, podemos utilizar o Piskel para inserir e fazer edições melhores em nossas imagens da animação, utilizando o Botão <strong><em>Edit with Piskel</em></strong>, o qual veremos como utilizar mais a frente.</p>
+</li>
+<li>
+<p>Além do Piskel, nós temos o botão <strong><em>Preview</em></strong>, onde podemos ver como a nossa sequência de imagens está funcionando para criar a animação em questão. Dentro da tela de preview, nós teremos a tela da animação rodando <strong><em>(1)</em></strong>, e abaixo as configurações de velocidade da animação <strong><em>(2)</em></strong>.
+Nas configurações de velocidade, nós temos dois valores: o <strong><em>FPS(Frames per Second)</em></strong>, que indica quantos quadros nossa animação anda por em um segundo de execução, e ao seu lado nós temos o <strong><em>tempo de execução da animação</em></strong>. </p>
+<p>Estes valores estão sempre conectados, de tal forma que <strong><em>quanto maior for nosso valor de FPS, menor será o tempo de execução da animação</em></strong>, e vice-versa. Logo, para animações mais simples, o ideal é termos uma taxa de FPS menor para ela, para alcançar um tempo de execução melhor desta animação.</p>
+<p>O GDevelop irá tentar otimizar estes valores de acordo com a quantidade de quadros que colocarmos, mas em alguns casos podemos sempre alterar estes valores.</p>
+</li>
+</ul>
+<p><img alt="Tela de Animação" src="images/image15.png" /></p>
+<ul>
+<li>Finalizando, após a parte de Preview, nós temos uma opção chamada <strong><em>Loop</em></strong>. Esta função irá fazer com que a animação em questão fique em repetição infinita. O <em>Loop</em> é especialmente útil quando fazemos animações de movimento.</li>
+</ul>
+<p><img alt="Tela de Spritesheet" src="images/image9.png" /></p>
+<ul>
+<li>
+<p>Após criarmos nossas animações, nós devemos verificar duas partes do nosso Sprite para que ele funcione de forma correta em nosso projeto: as <strong><em>Máscaras de Colisão</em></strong>, e os <strong><em>Pontos</em></strong>.</p>
+<p>Nós podemos editar ambos utilizando seus respectivos botões no canto inferior esquerdo da tela do Objeto, como mostrado na imagem abaixo.</p>
+</li>
+</ul>
+<p><img alt="Editando Pontos e Máscara de Colisão" src="images/image22.png" /></p>
+<h2 id="mascaras-de-colisao">Máscaras de Colisão<a class="headerlink" href="#mascaras-de-colisao" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p><em>Máscaras de Colisão</em> representam a parte “física” do seu Sprite. Dentro do GDevelop, toda a interpretação de contato entre dois ou mais objetos é dada através da colisão de suas máscaras. Ela é, de forma simplificada, a “Pele” do Sprite.</p>
+<p>Dado isto, é importante arrumar a máscara de Colisão para que ela cubra nosso Sprite o mais justo possível, para evitar que colisões aconteçam de forma errônea.</p>
+</li>
+</ul>
+<p><img align="center" alt="Exemplo A" src="images/image17.png" title="Exemplo A" width="200;" />
+<img align="center" alt="Exemplos B" src="images/image6.png" title="Exemplo B" width="180;" /></p>
+<p>No Exemplo A, podemos ver que a máscara de colisão está pegando toda nossa imagem. Porém, existem elementos nela, como a poeira e a arma, que não fazem parte do “Corpo” do nosso personagem. Sendo assim, o ideal é ajustar nossa máscara  para que ela cubra somente o que é realmente o “Corpo” do personagem, assim como o Exemplo B.</p>
+<ul>
+<li>No GDevelop, para editarmos a máscara padrão de colisão, precisamos clicar no botão <strong><em>Use a Custom collision mask</em></strong> dentro da tela de edição de colisões.</li>
+</ul>
+<p><img alt="Use Collision Mask" src="images/image7.png" /></p>
+<p>Após criarmos uma colisão personalizada, podemos ajustá-la de forma simples arrastando seus pontos ao redor da região em que queremos. Caso seja necessário mais pontos para ajustar a máscara, basta clicar no botão <strong><em>Add a Vertex</em></strong>, que um novo ponto surgirá no topo esquerdo da imagem.</p>
+<p><img alt="Vertex" src="images/image11.png" /></p>
+<ul>
+<li>De forma padrão, o GDevelop altera a máscara de colisão de <strong>TODAS</strong> as animações e seus respectivos frames juntos. Caso seja necessário termos máscaras distintas entre animações, ou entre frames, precisamos desativar os ajustes automáticos de animação <strong>(1)</strong> e frames <strong>(2)</strong>:</li>
+</ul>
+<p><img alt="Mudando a máscara" src="images/image19.png" /></p>
+<h2 id="pontos">Pontos<a class="headerlink" href="#pontos" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Pontos são referências de um espaço dentro de uma  imagem. Assim como máscaras de colisão, podemos utilizar pontos para calcular a colisão entre objetos, e também para determinar a posição de um objeto numa cena.
+Por padrão, um Sprite possui dois Pontos: O Ponto de Origem <strong>(1)</strong>, que determina o espaço inicial de onde a imagem do Sprite vai surgir (0,0), e o ponto Central <strong>(2)</strong>, que fica automaticamente centralizado no Sprite.</li>
+</ul>
+<p><img alt="Tela de Pontos" src="images/image23.png" /></p>
+<ul>
+<li>A edição de pontos é muito similar ao de máscaras de colisão, e todos os pontos são por padrão existentes em todas as animações e frames de um Sprite, mas podemos mudar isso caso seja necessário também.</li>
+</ul>
+<h2 id="comportamentos">Comportamentos<a class="headerlink" href="#comportamentos" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>Com o básico de um Objeto criado, agora vamos dar uma olhada em uma das partes mais importantes da programação No-Code no GDevelop: <strong><em>Behaviors</em></strong>, ou <strong><em>Comportamentos</em></strong>.
+Para adicionar um novo comportamento, basta irmos na aba Behavior dentro das opções do Objeto, e clicar em <strong><em>+Add Behavior</em></strong>.</p>
+<p><img alt="Add Behavior" src="images/image5.png" /></p>
+<p>Cada tipo de Objeto possui seus comportamentos, e você é capaz de adicionar múltiplos comportamentos em um mesmo objeto para acessar suas funcionalidades. Aqui iremos explicar os tipos de comportamentos mais comuns que iremos utilizados num projeto:</p>
+<ul>
+<li>
+<p><strong>Platform</strong> faz com que o objeto seja marcado como uma plataforma sólida no qual outros objetos podem andar sobre.</p>
+</li>
+<li>
+<p><strong>Platform Character</strong> é o comportamento ideal para um Objeto que terá movimento em um jogo Plataforma, como Mario. Ele também atribui Física ao objeto, fazendo-o cair na falta de uma plataforma, pular, subir um objeto que seja uma escada, ter uma velocidade e aceleração de movimento, etc.</p>
+</li>
+<li>
+<p><strong>Anchor</strong> faz com que um objeto fique fixado em uma posição da tela, independente do movimento da mesma. É um comportamento interessante para criar a Interface do seu jogo.</p>
+</li>
+<li>
+<p><strong>Destroy when outside of the screen</strong> é útil para limparmos alguns tipos de objetos após ele sair da nossa área de visão do jogo, como projéteis.</p>
+</li>
+</ul>
+<p><img alt="Add New Behavior" src="images/image1.png" /></p>
+</li>
+<li>
+<p>Após selecionar seu comportamento, ele exibirá opções que podem ser ajustadas de acordo com a sua necessidade. O comportamento de Platform Character permite que você ajuste todas as velocidades do Objeto em movimento, se o movimento dele será feito através dos controles padrões da ferramenta, entre outras funções.</p>
+</li>
+</ul>
+<h2 id="variaveis">Variáveis<a class="headerlink" href="#variaveis" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>Variáveis são utilizadas para criar atributos modificáveis em um objeto ou no projeto. Quando criamos uma variável em um objeto, ela será utilizada para definir alguma característica deste objeto que pode ser modificada durante o jogo. Um exemplo prático para isto é a Vida de um Personagem.
+Quando criamos uma variável para o projeto, o que chamamos de <strong>Variável Global</strong>, ela é utilizada para armazenar alguma informação que será reutilizada em várias cenas e momentos do nosso projeto, como por exemplo uma pontuação.</p>
+</li>
+<li>
+<p>Para criar uma variável em um Objeto, basta irmos na aba <strong>Variables (1)</strong> dentro da edição do objeto, e clicar no botão <strong>Add a Variable (2)</strong>, como na imagem abaixo:</p>
+</li>
+</ul>
+<p><img alt="Variáveis" src="images/image4.png" /></p>
+<ul>
+<li>
+<p>Ao criar uma variável, temos que definir alguns parâmetros da mesma:</p>
+<ul>
+<li><strong>Nome:</strong> Um nome que irá identificar esta variável. Quando trabalhos com variáveis de objetos, estes podem possuir variáveis com nomes iguais entre eles. Por exemplo, um objeto Personagem e um objeto Inimigo podem possuir uma variável Vida com valores diferentes.</li>
+<li><strong>Tipo:</strong> Uma variável precisa ter um tipo definido, o que irá ditar o que ela poderá armazenar dentro dela. São estes tipos:<ul>
+<li><strong>String:</strong> Capaz de armazenar textos;</li>
+<li><strong>Number:</strong> Capaz de armazenar valores numéricos;</li>
+<li><strong>Boolean:</strong> Armazena um valor de True ou False para lógicas booleanas;</li>
+<li><strong>Array:</strong> Armazena um conjunto de valores dentro dele, separados pela sua posição dentro da lista numericamente.</li>
+<li><strong>Structure:</strong> Armazena um conjunto de variáveis dentro dele.</li>
+</ul>
+</li>
+<li><strong>Valor Inicial:</strong> Define um valor inicial para esta variável.</li>
+</ul>
+</li>
+<li>
+<p>Para criar uma variável global, temos que ir nas propriedades do Projeto, clicando no botão no canto superior esquerdo do projeto e, em seguida, clicar no botão <strong><em>Global Variables (2)</em></strong>  que está dentro da aba <strong><em>Game Settings (1)</em></strong>. as definições de uma variável global são os mesmo para uma variável de um objeto.</p>
+</li>
+</ul>
+<p><img align="top" alt="Variáveis Globais" src="images/image21.png" width="500;" />
+<img alt="Variáveis Globais" src="images/image3.png" width="150" /></p>
+<h2 id="adicionando-objetos-na-cena">Adicionando Objetos na Cena<a class="headerlink" href="#adicionando-objetos-na-cena" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>Após criarmos nosso objeto, ele ficará na aba Objetos do nosso projeto, porém para adicionarmos ele na nossa Cena atual, é necessário criar Instâncias do mesmo nela.</p>
+</li>
+<li>
+<p>Para criar uma Instância de um Objeto, basta clicar e arrastar o objeto com o mouse, posicionando-o em algum lugar dentro da cena. Uma mesma cena pode possuir múltiplas instâncias de um objeto</p>
+</li>
+<li>
+<p>Cada Cena possui seus objetos de forma independente, mas você pode reutilizar objetos já criados de uma cena para outra se você tornar o mesmo Global. Para isso, basta clicar com botão direito no Objeto, e selecionar a opção <strong><em>Set as Global Object</em></strong>.</p>
+</li>
+<li>
+<p>Após adicionar uma instância de um objeto em uma Cena, você poderá ajustar seus parâmetros de cena, como tamanho e posição, na aba de Parâmetros, localizada no canto esquerdo do GDevelop, como exibido no início deste tutorial.</p>
+</li>
+</ul>
+<h2 id="camadas">Camadas<a class="headerlink" href="#camadas" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>As instâncias de um objeto ficam todas dentro de uma camada quando adicionadas numa cena. Por padrão, o GDevelop possui a camada <strong><em>Base Layer</em></strong>, porém podemos criar mais camadas para melhor dividir as instâncias dentro de uma cena.</p>
+</li>
+<li>
+<p>O uso de camadas é importante para determinar a ordem em que os objetos estão sobrepostos um do outro. Na aba de Camadas, o que determinar esta sobreposição é a ordem das camadas, com a primeira camada sendo a que estará mais ao “topo” das sobreposições</p>
+<p>Se criarmos, por exemplo, uma camada Fundo, e uma camada Interface, podemos organizar nossas instâncias de objetos entre essas camadas, colocando objetos do cenário e de fundo na camada Fundo, que ficará por último na ordem de camadas, e objetos como Barra de Vida, Pontuação, na camada Interface, que ficará em primeiro na ordem de camadas, com a camada Base Layer entre elas, com objetos como Personagens, Inimigos, plataformas e coletáveis.
+* Para criar uma camada, basta clicar no botão <strong><em>Add a Layer</em></strong> na Tela de Camadas, e para alternar suas ordens basta clicar no ícone ao lado esquerdo do nome da camada e arrastá-lo para a posição desejada. Lembre de colocar um nome para as camadas criadas.
+* Caso deseje esconder uma camada, basta clicar no ícone de olho no canto direito da camada, e para apagar uma camada, clique no ícone de lixeira da mesma.</p>
+</li>
+</ul>
+<h2 id="eventos">Eventos<a class="headerlink" href="#eventos" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>Além de trabalhar com objetos, a outra parte importante para criar um projeto no GDevelop consiste em trabalhar com <strong>Eventos</strong>.
+Um Evento consiste de uma <strong>Condição</strong>, que é um requisito para o evento, e de uma <strong>Ação</strong>, que é a execução de uma função dentro do evento.</p>
+</li>
+<li>
+<p>Para criarmos estes eventos, devemos ir para a aba de Eventos da cena em que estamos trabalhando. Cada cena possui seus próprios eventos, porém também podemos criar eventos externos a cenas que podem ser utilizados em múltiplas cenas ao serem chamados.</p>
+</li>
+<li>
+<p>Ao entrar numa aba de eventos, para criar um primeiro evento basta clicar no botão <strong><em>Add a Event (1)</em></strong> no centro da tela, que então irá criar uma linha de evento no topo da tela. Também temos um botão de adicionar um novo evento no fim da nossa sequência de eventos <strong><em>(2)</em></strong></p>
+</li>
+<li>
+<p>Após criar uma linha evento, para adicionar uma condição basta clicar em <strong><em>Add a condition (3)</em></strong> na parte esquerda do evento, e para adicionar uma ação, clicar em <strong><em>Add an action (4)</em></strong> na parte direita.</p>
+<p>Um evento pode ter múltiplas condições e ações. Para um evento ser executado, todas suas condições devem acontecer, e isto fará que todas suas ações sejam executadas na ordem em que estão.</p>
+</li>
+</ul>
+<p><img alt="Tela de Eventos" src="images/image18.png" /></p>
+<ul>
+<li>Ao clicar para adicionar uma condição ou ação, teremos que escolher quem ou o que irá gerar estes. Podemos selecionar um objeto criado <strong><em>(1)</em></strong>, ou uma propriedade do projeto <strong><em>(2)</em></strong> para gerar as condições e ações.
+Ao selecionar a origem, podemos configurar parâmetros específicos desta condição ou ação, caso possuam <strong><em>(3)</em></strong>. Por fim, basta clicar em <strong>Ok</strong> para concluir a criação.</li>
+</ul>
+<p><img alt="Adicionando Condições" src="images/image12.png" /></p>
+<h2 id="conclusao">Conclusão<a class="headerlink" href="#conclusao" title="Permanent link">&para;</a></h2>
+<p>Com estas noções, você está pronto para começar a criar seu primeiro projeto usando o GDevelop. 
+Lembre sempre de tirar dúvidas e sugestões com os professores, e também de conversar com seus companheiros para ter novas ideias para o projeto, afinal o trabalho em equipe é essencial.</p>
+<p><strong><em>DIVIRTAM-SE!!!!</em></strong> 😄</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2023 / Victor Tavais Cordeiro / victortc@insper.edu.br
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": ".", "features": ["instant", "navigation.expand", {"tabs": true}], "search": "assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="assets/javascripts/bundle.8fd75fb4.min.js"></script>
+      
+    
+  </body>
+</html>
